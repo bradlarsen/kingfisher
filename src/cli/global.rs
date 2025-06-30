@@ -14,9 +14,11 @@ use crate::cli::commands::{
 #[derive(Parser, Debug)]
 #[command(
     version = env!("CARGO_PKG_VERSION"),
-    after_help = "Made with \u{2764} by MongoDB",
+    after_help = "Made with \u{2764} by MongoDB\nBased on the Nosey Parker project originally developed by Praetorian Security, Inc.",
 )]
 /// Kingfisher by MongoDB — Detect and validate secrets across files and full Git history
+///
+/// Based on the Nosey Parker project originally developed by Praetorian Security, Inc.
 pub struct CommandLineArgs {
     /// The command to execute
     #[command(subcommand)]
